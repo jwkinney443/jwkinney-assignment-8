@@ -46,7 +46,7 @@ def do_experiments(start, end, step_num):
     beta0_list, beta1_list, beta2_list, slope_list, intercept_list, loss_list, margin_widths = [], [], [], [], [], [], []
     sample_data = {}  # Store sample datasets and models for visualization
 
-    n_samples = 8
+    n_samples = step_num
     n_cols = 2  # Fixed number of columns
     n_rows = (n_samples + n_cols - 1) // n_cols  # Calculate rows needed
     plt.figure(figsize=(20, n_rows * 10))  # Adjust figure height based on rows
